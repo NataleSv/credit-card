@@ -1,0 +1,50 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+form {
+    width: 350px;
+    padding: 50px;
+    padding-left: 20px;
+    margin-left: 40px;
+    color: rgb(31, 75, 77);
+    border-radius: 10px;
+    background-color: rgb(119, 191, 194);
+    background-image: url(img/moon_flag.png);
+    background-repeat: no-repeat;
+    background-position: 125% 135%;
+    Background-size: 50%;  
+}
+label {
+    font-size: 11px;
+    text-transform: capitalize;
+    color: rgb(21, 72, 75);
+}
+input {
+    border: none;
+    border-bottom: 1px solid rgb(31, 75, 77);
+    background-color: rgb(166, 219, 221);
+}
+h3 {
+    position: relative;
+    top: 60px;
+    left: 15px;
+    z-index: 1;
+    width: 200px;
+    padding: 5px 45px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(236, 137, 22);
+}
+div {
+    display: inline-block;  
+}
+#Card_Number, #Name_on_card {
+    width: 180px;
+}
+#CVV_CVN, .Expiry {
+    width: 52px;
+}
+input:focus {
+	outline: none;
+}
