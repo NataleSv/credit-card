@@ -1,50 +1,92 @@
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
-form {
-    width: 350px;
-    padding: 50px;
-    padding-left: 20px;
-    margin-left: 40px;
+
+.wrapper {
+    background: linear-gradient(#9198e5, #77BFC2FF);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper_card_section {
+    display: flex;
+    align-items: center;
+}
+
+.card_container {
+    margin-top: 20vh;
+    width: fit-content;
+    position: relative;
+}
+
+.card_container_form {
+    width: inherit;
+    padding: 50px 40px 30px 40px;
     color: rgb(31, 75, 77);
+    border: 1px solid rgb(54, 157, 167);
     border-radius: 10px;
-    background-color: rgb(119, 191, 194);
+    background-color: rgb(64, 173, 188);
     background-image: url(img/moon_flag.png);
     background-repeat: no-repeat;
-    background-position: 125% 135%;
-    Background-size: 50%;  
+    background-position: 115% 130%;
+    Background-size: 40%;
 }
-label {
-    font-size: 11px;
+.card_label {
+    font-size: 13px;
     text-transform: capitalize;
     color: rgb(21, 72, 75);
 }
-input {
+.card_input {
     border: none;
     border-bottom: 1px solid rgb(31, 75, 77);
     background-color: rgb(166, 219, 221);
+    padding: 0 1px 0 5px;
+    border-radius: 2px;
+    margin-left: 8px;
+    color: rgb(31, 75, 77);
 }
-h3 {
+
+.card_input_number {
+    width: 66%;
+}
+
+.card_input_name {
+    text-transform: uppercase;
+}
+
+.card_date {
+    width: 50px;
+}
+.card_input_cvv {
+    width: 50px;
+    padding: 0 18px 0 15px;
+}
+
+.card_name {
     position: relative;
-    top: 60px;
-    left: 15px;
+    top: 40px;
+    left: -20px;
     z-index: 1;
-    width: 200px;
-    padding: 5px 45px;
+    width: fit-content;
+    padding: 5px 35px 5px 5px;
+    border-radius: 3px 10px 2px 10px;
     font-size: 14px;
     text-transform: uppercase;
     color: white;
-    background-color: rgb(236, 137, 22);
+    background-color: rgba(21, 72, 75, 0.86);
 }
-div {
-    display: inline-block;  
+
+.error {
+    height: 14px;
+    font-size: 9px;
+    color: rgba(188, 23, 23, 0.78);
 }
-#Card_Number, #Name_on_card {
-    width: 180px;
-}
-#CVV_CVN, .Expiry {
-    width: 52px;
-}
+
 input:focus {
 	outline: none;
 }
