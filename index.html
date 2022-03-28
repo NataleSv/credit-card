@@ -9,26 +9,30 @@
 <body>
     <div class="wrapper">
         <div class="card_container">
-            <h3 class="card_name">Credit card details</h3>
-            <form action="" method="POST" autocomplete="off" name="card">
-                <div class="wrapper_card_number">
-                    <label for="card_number">Card number</label>
-                    <input type="text" id="card_number" name="card_number" placeholder="1234 5678 9012 3456" required>
+           <h3 class="card_name">Credit card details</h3>
+            <form class="card_container_form" action="" method="POST" autocomplete="off" name="card">
+                <div class="wrapper_card_section">
+                    <label for="card_number" class="card_label">Card number</label>
+                    <input class="card_input card_input_number" type="text" id="card_number" name="card_number" placeholder="1234 5678 9012 3456" required>
                 </div>
-                <div class="wrapper_full_name">
-                    <label for="name_on_card">Name on Card</label>
-                    <input type="text" id="name_on_card" name="full_name" placeholder="Name Surname" required>
+                <div class="error"></div>
+                <div class="wrapper_card_section">
+                    <label for="name_on_card" class="card_label">Name on Card</label>
+                    <input class="card_input card_input_name" type="text" id="name_on_card" name="full_name" placeholder="NAME SURNAME" required>
                 </div>
-                <div class="wrapper_card_date">
-                    <label for="month">Expiry date</label>
-                    <input type="number" class="card_date" name="month" id="month" max="12" min="01" step="1" placeholder="02" required>
+                <div class="error"></div>
+                <div class="wrapper_card_section">
+                    <label for="month" class="card_label">Expiry date</label>
+                    <input type="number" class="card_date card_input" name="month" id="month" max="12" min="01" step="1" placeholder="02" required>
                     <label for="year"></label>
-                    <input type="number" class="card_date" name="year" id="year" placeholder="2022" required>
+                    <input type="number" class="card_date card_input" name="year" id="year" placeholder="2022" required>
                 </div>
-                <div class="wrapper_cvv_cvn">
-                    <label for="cvv_cvn">CVV/CVN</label>
-                    <input type="password" id="cvv_cvn" name="CVV/CVN" placeholder="***" required>
+                <div class="error"></div>
+                <div class="wrapper_card_section">
+                    <label for="cvv_cvn" class="card_label">CVV/CVN</label>
+                    <input class="card_input card_input_cvv " type="password" id="cvv_cvn" name="CVV/CVN" placeholder="***" required>
                 </div>
+                <div class="error"></div>
             </form>
         </div>
 
